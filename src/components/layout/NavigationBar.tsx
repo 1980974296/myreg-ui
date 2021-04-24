@@ -83,6 +83,7 @@ function DesktopBar() {
       ) : (
         <p></p>
       )}
+
       <Anchor to="/" name="Swap" />
       <Anchor to="/pools" name="Pools" />
       <Anchor to="/Adboard" name="Adboard" />
