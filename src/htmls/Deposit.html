@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./global.css">
+    <title>Document</title>
+</head>
+<body class="h-screen">
+  <div class="flex flex-col justify-center pt-32">
+    <div class="swap">
+      <div class="title text-center text-4xl pb-3">Deposit</div>
+      <div class="describe text-center text-sm pb-9">Use this to deposit tokens</div>
+      <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto">
+        <form>
+          <!-- form -->
+          <div class="flex justify-between text-gray-600 pb-3">
+            <span class="text-black">form</span>
+            <span class="text-gray-400">Balance</span>
+          </div>
+
+          <div class="h-14 bg-inputBg relative grid grid-cols-12 rounded-xl align-center my-2 border overflow-hidden">
+            <div class="text-green-500 col-span-9 relative flex align-center items-center">
+              <input 
+                type="number" 
+                class="green-input text-base text-green-500 text-black focus:outline-none bg-inputBg appearance-none rounded border-opacity-30 w-full py-2 px-3 leading-tight placeholder:text-gray-500"
+                step="any"
+                min="0"
+                placeholder="0"
+              >
+              <button class="text-green-500 right-0 items-center py-2 px-3 font-bold m-auto focus:outline-none">MAX</button>
+            </div>
+            <button class="focus:outline-none p-1 col-span-3 text-black font-bold border-l border-gray-3">
+                <div class="flex items-center justify-center">
+                  <span class="pr-1">select</span>
+                  <svg class="text-green-500" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="stroke-current text-inputText block ml-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+                </div>
+              </button>
+          </div>
+
+        <!-- 按钮 -->
+            <!-- 登录 -->
+          <div class="w-full flex justify-center">
+            <button
+              class="flex flex-row justify-center mt-5 items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+            >
+              <h1 class="text-base font-inter font-medium ">Deposit to Stake</h1>
+            </button>
+          </div>
+          <!-- 未登录 -->
+          <!-- <div class="w-full flex justify-center">
+            <button
+              class="flex flex-row justify-center mt-5 items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-black text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+            >
+              <h1 class="text-base font-inter font-medium ">Connect to NEAR</h1>
+            </button>
+          </div> -->
+        </form>
+      </section>
+      <div class="sm:w-full md:w-2/3 lg:w-1/3 m-auto text-center pt-2 text-sm">Small storage fee is applied of <span class="font-bold">0.00084</span> Ⓝ</div>
+
+      <!-- 登录显示底部内容 -->
+      <div class="title text-center text-2xl pb-3 pt-5">Balance</div>
+      <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto">
+        <!-- 无token显示 -->
+        <!-- <div class="text-gray-600 text-center">No tokens deposit</div> -->
+        <!-- 有token时显示 -->
+        <ul class="pt-3">
+          <li class="flex justify-between border-b text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+            <div class="flex">
+              <!-- icon -->
+              <div class="icon mr-2">
+              </div>
+              <span>NEAR</span>   
+            </div>
+            <div class="font-bold">100</div>
+          </li>
+        </ul>
+  
+        <!-- 按钮 -->
+        <div class="w-full flex justify-center">
+          <button
+            class="flex flex-row justify-center mt-5 items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+          >
+            <h1 class="text-base font-inter font-medium ">Withdraw</h1>
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

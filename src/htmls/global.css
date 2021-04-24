@@ -12,6 +12,9 @@
     bottom: 1.67%;
 
 }
+.green-input::-webkit-input-placeholder {
+  color: rgba(16, 185, 129, var(--tw-text-opacity))
+}
 .bg-secondary {
     background-color: #fff;
 }

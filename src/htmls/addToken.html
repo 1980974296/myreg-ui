@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./global.css">
+    <title>Document</title>
+</head>
+<body class="h-screen">
+  <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto">
+    <section>
+      <div class="text-sm py-2 text-center w-full flex justify-between text-black mb-5 items-center">
+        <span class="font-bold text-base">Add Token</span>
+      </div>
+      <div>
+        <input 
+          type="text" 
+          class="font-bold h-12 border text-base text-black focus:outline-none bg-inputBg appearance-none rounded-lg border-opacity-30 w-full py-2 px-3 text-inputText leading-tight"
+          placeholder="Enter token address"
+        >
+      </div>
+
+      <!-- 按钮 -->
+      <div class="w-full flex justify-center">
+				<div class="flex">
+					<button
+						class="flex mr-5 flex-row justify-center mt-5 items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+					>
+						<h1 class="text-base font-inter font-medium ">Add Token</h1>
+					</button>
+					<button
+						class="flex flex-row justify-center mt-5 items-center rounded-full pl-3 pr-3 pt-1 pb-1 text-black border border-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+					>
+						<h1 class="text-base font-inter font-medium ">Cancel</h1>
+					</button>
+				</div>
+      </div>
+    </section>
+  </section>
+</body>
+</html>

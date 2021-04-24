@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./global.css">
+    <title>Document</title>
+</head>
+<body class="h-screen">
+  <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto">
+    <section>
+      <div class="text-sm py-2 text-center w-full flex justify-between text-black items-center">
+        <span class="font-bold text-base">Select Token</span>
+        <!-- <button class="border rounded-full border-green-500 px-2 py-1">Add Token</button> -->
+      </div>
+      <!-- token列表 -->
+      <ul class="pt-1">
+        <li class="flex justify-between border-b text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+          <div class="flex">
+            <!-- icon -->
+            <div class="icon mr-2">
+            </div>
+            <span>NEAR</span>   
+          </div>
+          <div class="font-bold">100</div>
+        </li>
+      </ul>
+
+      <!-- 按钮 -->
+      <div class="w-full flex justify-center">
+        <button
+          class="flex flex-row justify-center mt-5 items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+        >
+          <h1 class="text-base font-inter font-medium ">Cancel</h1>
+        </button>
+      </div>
+    </section>
+  </section>
+</body>
+</html>
