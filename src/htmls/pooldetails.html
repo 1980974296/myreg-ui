@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./global.css">
+    <title>Document</title>
+</head>
+<body class="h-screen">
+  <div class="flex flex-col justify-center pt-32">
+    <div class="swap">
+      <div class="title text-center text-4xl pb-3 mb-5">Pool details</div>
+
+      <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto">
+        <div class="border-b pb-6">
+          <div class="w-full flex justify-center text-black mb-3">
+            <div class="flex">
+              <div class="icon mr-2">1</div>
+              <div class="icon">2</div>
+            </div>
+          </div>
+          <div class="text-black font-bold text-center">nDAI - wNEAR</div>
+        </div>
+
+        <ul class="pt-3 mb-5">
+          <li class="flex justify-between text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+            <div class="flex">
+              <span>Unclaimed Rewards</span>   
+            </div>
+            <div class="font-bold">100 REF</div>
+          </li>
+
+          <li class="hover:bg-gray-100 py-2">
+            <ul>
+              <li class="text-black">Underlying liquidity</li>
+              <li class="flex justify-between text-black items-center cursor-pointer">
+                <div class="flex">
+                  <span>nDAI</span>   
+                </div>
+                <div class="font-bold">100 REF</div>
+              </li>
+              <li class="flex justify-between text-black items-center cursor-pointer">
+                <div class="flex">
+                  <span>wNEAR</span>   
+                </div>
+                <div class="font-bold">100 REF</div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="flex justify-between text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+            <div class="flex">
+              <span>Unclaimed Rewards</span>   
+            </div>
+            <div class="font-bold">100 REF</div>
+          </li>
+          
+        </ul>
+
+        <div class="flex w-full justify-center">
+          <div class="flex">
+            <button
+              class="flex mr-2 flex-row justify-center items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+            >
+              <h1 class="text-base font-inter font-medium ">Add Liquidity</h1>
+            </button>
+  
+            <button
+              class="opacity-50 flex flex-row justify-center items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+            >
+              <h1 class="text-base font-inter font-medium ">Remove Liquidity</h1>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
