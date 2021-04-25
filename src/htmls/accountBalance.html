@@ -11,19 +11,20 @@
 <body class="h-screen">
   <div class="flex flex-col justify-center pt-32">
     <div class="swap">
-      <div class="title text-center text-4xl pb-3 mb-5">Add Token</div>
+      <div class="title text-center text-4xl pb-3">Account Balance</div>
+      <div class="describe text-center text-sm pb-9">Use this to deposit tokens</div>
       <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto">
-        <form>
-          <!-- Token -->
-          <div class="flex justify-between text-gray-600 pb-3">
-            <span class="text-black">Token</span>
-          </div>
-
-          <div class="h-14 cursor-pointer px-3 text-black font-bold bg-inputBg relative flex items-center justify-between rounded-xl align-center my-2 border overflow-hidden">
-            <span>Select</span>
-            <svg class="text-green-500" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="stroke-current text-inputText block ml-1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
-          </div>
-
+          <ul class="pt-3">
+            <li class="flex justify-between border-b text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+              <div class="flex">
+                <!-- icon -->
+                <div class="icon mr-2">
+                </div>
+                <span>NEAR</span>   
+              </div>
+              <div class="font-bold">100</div>
+            </li>
+          </ul>
         <!-- 按钮 -->
             <!-- 登录 -->
           <div class="w-full flex justify-center">
@@ -41,9 +42,8 @@
               <h1 class="text-base font-inter font-medium ">Connect to NEAR</h1>
             </button>
           </div> -->
-        </form>
       </section>
-      <div class="sm:w-full md:w-2/3 lg:w-1/3 m-auto text-center pt-2 text-sm">This allows you to add an ERC-20 token to the exchange that is not already listed.</div>
+      <div class="sm:w-full md:w-2/3 lg:w-1/3 m-auto text-center pt-2 text-sm">This creates a new liquidity pool for the two tokens selected. The fee is the percentage the pool takes from each transaction.</div>
     </div>
   </div>
 </body>

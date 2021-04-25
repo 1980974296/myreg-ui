@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="./global.css">
+    <title>Document</title>
+</head>
+<body class="h-screen">
+  <div class="flex flex-col justify-center pt-32">
+    <div class="swap">
+      <div class="title text-center text-4xl pb-3 mb-5">Farms</div>
+
+      <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto mb-8">
+          <ul class="pt-3">
+            <li class="flex justify-between border-b text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+              <div class="flex">
+                <span>Unclaimed Rewards</span>   
+              </div>
+              <div class="font-bold">100 REF</div>
+            </li>
+            <li class="flex justify-between border-b text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+              <div class="flex">
+                <span>Total Rewards</span>   
+              </div>
+              <div class="font-bold">100 REF</div>
+            </li>
+          </ul>
+        <!-- 按钮 -->
+          <div class="w-full flex justify-center">
+            <button
+              class="flex flex-row justify-center mt-5 items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+            >
+              <h1 class="text-base font-inter font-medium ">Claim Rewards</h1>
+            </button>
+          </div>
+      </section>
+
+      <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto mb-8">
+        <div class="w-full flex justify-between items-center border-b pb-5">
+
+          <div class="flex">
+            <div class="icon mr-3 flex">
+              <div class="icon mr-1">
+                  
+              </div>
+              <div class="icon">
+                  
+              </div>
+            </div>
+            <div class="font-bold text-black">
+              DAI - NEAR
+            </div>
+          </div>
+
+          <div class="flex">
+            <button
+              class="flex mr-2 flex-row justify-center items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+            >
+              <h1 class="text-base font-inter font-medium ">Withdraw</h1>
+            </button>
+
+            <button
+              class="flex flex-row justify-center items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+            >
+              <h1 class="text-base font-inter font-medium ">Stake</h1>
+            </button>
+          </div>
+
+        </div>
+
+        <ul class="pt-3">
+          <li class="flex justify-between text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+            <div class="flex">
+              <span>Total Shares Deposited</span>   
+            </div>
+            <div class="font-bold">100 REF</div>
+          </li>
+          <li class="flex justify-between text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+            <div class="flex">
+              <span>Rewards per week</span>   
+            </div>
+            <div class="font-bold">100 REF</div>
+          </li>
+          <li class="flex justify-between text-black items-center h-12 hover:bg-gray-100 cursor-pointer">
+            <div class="flex">
+              <span>Weekly rewards per</span>   
+            </div>
+            <div class="font-bold">100 REF</div>
+          </li>
+        </ul>
+    </section>
+
+    <section class="overflow-y-auto bg-secondary shadow-2xl rounded-xl p-7 sm:w-full md:w-2/3 lg:w-1/3 m-auto">
+      <div class="w-full flex justify-between items-center">
+
+        <div class="flex">
+          <div class="icon mr-3 flex">
+            <div class="icon mr-1">
+                
+            </div>
+            <div class="icon">
+                
+            </div>
+          </div>
+          <div class="font-bold text-black">
+            DAI - NEAR
+          </div>
+        </div>
+
+        <div class="flex">
+          <button
+            class="flex mr-2 flex-row justify-center items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+          >
+            <h1 class="text-base font-inter font-medium ">Withdraw</h1>
+          </button>
+
+          <button
+            class="flex flex-row justify-center items-center rounded-full pl-3 pr-3 pt-1 pb-1 bg-green-500 text-sm disabled:opacity-50 transition-colors focus:outline-none disabled:cursor-not-allowed"
+          >
+            <h1 class="text-base font-inter font-medium ">Stake</h1>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    </div>
+  </div>
+</body>
+</html>
